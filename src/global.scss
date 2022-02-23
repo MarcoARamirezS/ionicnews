@@ -24,3 +24,24 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+.article-content {
+    font-size: 14px!important;
+    color: rgb(49, 11, 11);
+    text-align: justify;
+}
+
+.article-title {
+    font-size: 16px;
+    font-weight: 600;
+    color:rgb(22, 1, 1);
+    text-align: left;
+}
+
+.article-source-name {
+    font-size: 14px;
+    font-weight: 800;
+    color:rgb(10, 5, 83);
+    text-align: center;
+}
