@@ -11,7 +11,7 @@ export class Tab2Page implements OnInit {
 
   public categories: string[] = [
     'business',
-    'entertaiment',
+    'entertainment',
     'general',
     'health',
     'science',
@@ -23,10 +23,10 @@ export class Tab2Page implements OnInit {
 
   constructor(private newService: NewsService) {}
 
-  ngOnInit(): void {
-      this.newService.getTopHeadersLinesByCategory(this.selectedCatogory)
+  ngOnInit(): void { 
+    this.newService.getTopHeadersLinesByCategory(this.selectedCatogory)
         .subscribe( articles => {
-          this.articles = [ ...this.articles, ...articles ]
+          this.articles = [ ...articles ]
         })
   }
 
